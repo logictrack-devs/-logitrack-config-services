@@ -1,15 +1,15 @@
 server:
-  port: 8081
+  port: 8080
 
 spring:
   datasource:
-    url: ${DB_URL}             # sin default -> exige env vars reales
+    url: ${DB_URL}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: validate       # nunca update en prod
+      ddl-auto: validate
       show-sql: false
 
 logging:
